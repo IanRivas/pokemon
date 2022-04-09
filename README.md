@@ -6,7 +6,7 @@ This was made with React and Typescript
 
 ![page](./src/page.jpg)
 
-## Page deployed with AWS S3 
+## Page deployed in AWS S3 
 
 [Visit Page](http://pokemon-ianrivas.s3-website.us-east-2.amazonaws.com/)
 
