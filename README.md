@@ -4,7 +4,7 @@
 
 This was made with React and Typescript
 
-![page](./src/page.jpg)
+![page](./src/page.png)
 
 ## Page deployed in AWS S3 
 
