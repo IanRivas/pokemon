@@ -1,3 +1,8 @@
+p{
+  margin:0;
+  padding: 0;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -27,19 +32,20 @@ img {
   justify-content: center;
   margin-bottom: 5px;
 }
-
-.container-count{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+.count-container{
+  margin-top: 35px;
 }
-
 .countItem{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  gap: 25px;
+  
+}
+
+.second{
+  margin-top: 5px;
+  padding-left: 15px;
 }
 
 .pokemon-container{
@@ -57,14 +63,20 @@ img {
 }
 
 @media (max-width: 565px) {
-  .container-count, .pokemon-container{
+ .pokemon-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
   }
   img{
-    width: 150px;
-  height: 150px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 350px) {
+  p{
+    font-size: 0.8rem;
   }
 }

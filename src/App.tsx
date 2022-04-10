@@ -93,7 +93,7 @@ function App() {
       </div>
 
       <form className="nes-field is-inline" onSubmit={handleSubmit}>
-        <input className="nes-input" name="pokemonName" type="text" />
+        <input autoFocus className="nes-input" name="pokemonName" type="text" />
         <div>
           <button className="nes-btn is-primary" type="submit">
             Guess
@@ -103,17 +103,17 @@ function App() {
           </button>
         </div>
       </form>
-      <div className="container-count">
+      <div className="count-container">
         <div className="countItem">
-          <p>Winning Count: {countVictory}</p>
+          <p className="nes-text is-success">Winning: {countVictory}</p>
           <button className="nes-btn is-error" onClick={resetCountVictory}>
-            Reset Winning Count
+            Reset
           </button>
         </div>
-        <div className="countItem">
-          <p>Losing Count: {countLosing}</p>
+        <div className="countItem second">
+          <p className="nes-text is-error">Losing: {countLosing}</p>
           <button className="nes-btn is-error" onClick={resetCountLosing}>
-            Reset Losing Count
+            Reset
           </button>
         </div>
       </div>
